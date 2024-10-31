@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff6699);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.cake-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cake-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cake-item:hover {
+    transform: scale(1.05);
+}
+
+.cake-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.cake-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.cake-item:hover .cake-image img {
+    transform: scale(1.1);
+}
+
+.cake-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cake-item p {
+    padding: 0 15px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
